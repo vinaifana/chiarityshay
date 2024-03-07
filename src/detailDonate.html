@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+      <!-- Header -->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+      <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+        <!-- Logo -->
+        <div class="flex justify-center lg:justify-normal">
+          <a href="" class="flex items-center px-[20px] w-max gap-x-2 mx-auto xl:mx-0">
+            <img src="../assets/asset/logo.svg" alt="">
+            <div class="text-base text-[#77D7D3] xl:text-[35px] text-[30px] tracking-[2.24px] font-bold">Chiarityshay</div>
+          </a>
+        </div>
+        <div class="flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-10 lg:gap-y-0 mt-3">
+          <a href="login.html"> 
+            <button class="btn btn-sm btn-accent w-[240px] lg:w-auto mx-auto lg:mx-0 shadow-2xl transition-all duration-500 z-9">
+            Sign In
+            </button>
+        </a>
+        <a href="register.html">
+          <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 shadow-2xl transition-all duration-500 z-9">
+            Sign Up
+          </button>
+        </a>
+          
+          <!-- Social Media -->
+          <div class="flex gap-x-4 items-center container mx-auto lg:hidden mt-4 justify-center">
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-instagram-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-twitter-x-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-youtube-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-facebook-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+          </div>
+
+          <!-- Nav Mobile -->
+          <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full
+            top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg">
+                <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+            </div>
+            <!-- Logo List Form -->
+            <div class="px-12 flex flex-col gap-y-12 h-full">
+              <!-- logo -->
+              <a href="">
+                <img src="../assets/img/header/logo.svg" alt="">
+              </a>
+              <!-- Form -->
+              <ul class="flex flex-col gap-y-5">
+                <li>
+                  <a href="index.html" class="text-secondary hover:text-accent transition-all duration-300">Home</a>
+                </li>
+                <li>
+                  <a href="index.html#service" class="text-secondary hover:text-accent transition-all duration-300">Service</a>
+                </li>
+                <li>
+                  <a href="index.html#causes" class="text-secondary hover:text-accent transition-all duration-300">Causes</a>
+                </li>
+                <li>
+                  <a href="index.html#testimonial" class="text-secondary hover:text-accent transition-all duration-300">Testimonial</a>
+                </li>
+                <li>
+                  <a href="index.htmlvolunteer" class="text-secondary hover:text-accent transition-all duration-300">Volunteer</a>
+                </li>
+                <li>
+                  <a href="index.html#gallery" class="text-secondary hover:text-accent transition-all duration-300">Gallery</a>
+                </li>
+              </ul>
+              <!-- Form -->
+              <form action="" class="relative flex gap-x-[10px]">
+                <label for="">
+                  <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+                <input type="text" id="nav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic">
+              </form>
+            </div>
+          </nav>
+          <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between pr-4 lg:px-[50px]">
+            <!-- List -->
+            <ul class="flex gap-x-4">
+              <li>
+                <a href="index.html" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a>
+              </li>
+              <li>
+                <a href="index.html#service" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Service</a>
+              </li>
+              <li>
+                <a href="index.html#causes" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Causes</a>
+              </li>
+              <li>
+                <a href="index.html#testimonial" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Testimonial</a>
+              </li>
+              <li>
+                <a href="index.html.volunteer" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Volunteer</a>
+              </li>
+              <li>
+                <a href="index.html#gallery" class="text-secondary hover:text-accent transition-all duration-300">Gallery</a>
+              </li>
+            </ul>
+            <!-- Form -->
+            <form class="relative flex gap-y-[10px]">
+              <label for="search-input" class="flex justify-center items-center group">
+                <i class="ri-search-line text-2xl text-accent"></i>
+              </label>
+              <input type="text" id="search-input" placeholder="Search..."
+              class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-500">
+            </form>
+          </nav>
+    </header>
+    <!-- Header End -->
+
+      <!-- Head -->
+      <section class="mb-[100px]">
+        <div class="bg-no-repeat bg-cover w-full">
+          <!-- Image -->
+          <img src="../assets/asset/Banner.png" alt="">
+        </div>
+        <div class="container mx-auto">
+          <div>
+            <!-- Blog Post -->
+          <div class="flex flex-col xl:flex-row gap-y-5 xl:gap-y-0 xl:justify-between items-center mb-[50px] xl:gap-[30px] mt-[70px]">
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+          </div>
+          </div>
+            <!-- Blog Post -->
+          <div class="flex flex-col xl:flex-row gap-y-5 xl:gap-y-0 xl:justify-between items-center mb-[50px] xl:gap-[30px] mt-[70px]">
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+          </div>
+          </div>
+            <!-- Blog Post -->
+          <div class="flex flex-col xl:flex-row gap-y-5 xl:gap-y-0 xl:justify-between items-center mb-[50px] xl:gap-[30px] mt-[70px]">
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+          </div>
+          </div>
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+    <footer class="bg-secondary text-white p-8">
+        <div class="container mx-auto flex flex-wrap justify-between">
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+                <h3 class="text-[30px] font-semibold mb-4 flex text-white">
+                <img src="../assets/asset/logo.svg" alt="" class="mr-3">
+                Humanity
+                </h3>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla justo eget elementum.</p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+                <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                <p class="text-white">Email: chiarityshay@peduli.com</p>
+                <p class="text-white">Phone: +1 (123) 456-7890</p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+                <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white transition-all duration-300 bg-accent-tertiary p-2.5 rounded-full hover:bg-accent hover:text-secondary">
+                      <i class="ri-facebook-fill text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-white transition-all duration-300 bg-accent-tertiary p-2.5 rounded-full hover:bg-accent hover:text-secondary">
+                      <i class="ri-twitter-x-fill text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-white transition-all duration-300 bg-accent-tertiary p-2.5 rounded-full hover:bg-accent hover:text-secondary">
+                        <i class="ri-instagram-line text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+                <h3 class="text-xl font-semibold mb-4 ">Newsletter</h3>
+                <p class="text-white">Subscribe to our newsletter for updates and promotions.</p>
+                <form class="mt-4">
+                    <input type="email" placeholder="Your Email" class="w-full p-2 border rounded focus:outline-none focus:border-accent">
+                    <button type="submit" class="mt-2 w-full bg-accent-tertiary text-white p-2 rounded hover:bg-accent focus:outline-none focus:shadow-outline-blue">Subscribe</button>
+                </form>
+            </div>
+        </div>
+  
+        <div class="mt-8 border-t border-gray-600 pt-4 text-center text-white">
+            <p>&copy; 2024 Your Website. All rights reserved.</p>
+        </div>
+      </footer>
+      <!-- Footer End -->
+
+    <!-- Script Swipper -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- My Script -->
+    <script src="main.js"></script>
+    
+    <!-- Script Scroll Reveal -->
+    <script src="scrollreveal.min.js"></script>
+    
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

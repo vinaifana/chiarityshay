@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiarityshay</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="py-8 lg:pt-6 lg:pb-14">
+      <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 lg:gap-y-0">
+        <!-- Logo -->
+        <div class="flex justify-center lg:justify-normal">
+          <a href="" class="flex items-center px-[20px] w-max gap-x-2 mx-auto xl:mx-0">
+            <img src="../assets/asset/logo.svg" alt="">
+            <div class="text-base text-[#77D7D3] xl:text-[35px] text-[30px] tracking-[2.24px] font-bold">Chiarityshay</div>
+          </a>
+        </div>
+        <div class="flex flex-col gap-y-[30px] lg:flex-row lg:gap-x-10 lg:gap-y-0 mt-3">
+          <a href="login.html"> 
+            <button class="btn btn-sm btn-accent w-[240px] lg:w-auto mx-auto lg:mx-0 shadow-2xl transition-all duration-500 z-9">
+            Sign In
+            </button>
+        </a>
+        <a href="register.html">
+          <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0 shadow-2xl transition-all duration-500 z-9">
+            Sign Up
+          </button>
+        </a>
+          
+          <!-- Social Media -->
+          <div class="flex gap-x-4 items-center container mx-auto lg:hidden mt-4 justify-center">
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-instagram-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-twitter-x-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-youtube-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+            <div class="bg-accent-tertiary rounded-full w-[50px] h-[50px] items-center py-[9px] px-[13px]">
+              <a href=""><i class="ri-facebook-line text-2xl text-white items-center text-center"></i></a>
+            </div>
+          </div>
+
+          <!-- Nav Mobile -->
+          <nav class="mnav bg-white fixed w-[300px] top-0 h-screen -left-[300px] lg:hidden">
+            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full
+            top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg">
+                <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+            </div>
+            <!-- Logo List Form -->
+            <div class="px-12 flex flex-col gap-y-12 h-full">
+              <!-- logo -->
+              <a href="">
+                <img src="../assets/img/header/logo.svg" alt="">
+              </a>
+              <!-- Form -->
+              <ul class="flex flex-col gap-y-5">
+                <li>
+                  <a href="#hero" class="text-secondary hover:text-accent transition-all duration-300">Home</a>
+                </li>
+                <li>
+                  <a href="#service" class="text-secondary hover:text-accent transition-all duration-300">Service</a>
+                </li>
+                <li>
+                  <a href="#causes" class="text-secondary hover:text-accent transition-all duration-300">Causes</a>
+                </li>
+                <li>
+                  <a href="#testimonial" class="text-secondary hover:text-accent transition-all duration-300">Testimonial</a>
+                </li>
+                <li>
+                  <a href="#volunteer" class="text-secondary hover:text-accent transition-all duration-300">Volunteer</a>
+                </li>
+                <li>
+                  <a href="#gallery" class="text-secondary hover:text-accent transition-all duration-300">Gallery</a>
+                </li>
+              </ul>
+              <!-- Form -->
+              <form action="" class="relative flex gap-x-[10px]">
+                <label for="">
+                  <i class="ri-search-line text-2xl text-accent"></i>
+                </label>
+                <input type="text" id="nav-search-input" placeholder="Search..." class="outline-none w-[160px] border-b-2 focus:border-b-2 focus:border-accent placeholder:italic">
+              </form>
+            </div>
+          </nav>
+          <nav class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between pr-4 lg:px-[50px]">
+            <!-- List -->
+            <ul class="flex gap-x-4">
+              <li>
+                <a href="#hero" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Home</a>
+              </li>
+              <li>
+                <a href="#sevice" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Service</a>
+              </li>
+              <li>
+                <a href="#causes" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Causes</a>
+              </li>
+              <li>
+                <a href="#testimonial" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Testimonial</a>
+              </li>
+              <li>
+                <a href="#volunteer" class=" border-r pr-4 text-secondary hover:text-accent transition-all duration-300">Volunteer</a>
+              </li>
+              <li>
+                <a href="#gallery" class="text-secondary hover:text-accent transition-all duration-300">Gallery</a>
+              </li>
+            </ul>
+            <!-- Form -->
+            <form class="relative flex gap-y-[10px]">
+              <label for="search-input" class="flex justify-center items-center group">
+                <i class="ri-search-line text-2xl text-accent"></i>
+              </label>
+              <input type="text" id="search-input" placeholder="Search..."
+              class="outline-none w-[100px] focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-500">
+            </form>
+          </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero -->
+    <section class="hero xl:bg-homeBg bg-grey py-12 xl:pt-0 xl:pb-12 overflow-hidden xl:h-[900px] bg-no-repeat bg-cover" id="hero">
+      <div class="container mx-auto h-full ">
+        <!-- Text Img -->
+        <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+          <!-- Text -->
+          <div class="hero__text xl:w-[48%] text-center xl:text-left">
+            
+            <!-- Title -->
+            <h1 class="h1 mb-6 text-[#FFF]">We Need Your Powerful Hands To <span class="xl:text-[#FF6D6D] text-accent">Change</span> The World.</h1>
+            <!-- Desc -->
+            <p class="mb-[42px] md:max-w-xl text-white">
+              Vitae aliquam vestibulum elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.
+            </p>
+            <!-- btn -->
+            <div class="flex xl:flex-row flex-col gap-y-5 xl:gap-y-0 xl:gap-x-[25px] mx-auto mt-2">
+              <button class="btn btn-lg btn-scn">Donate</button>
+              <button class="btn btn-lg btn-scn">Volunteer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->   
+
+    <!-- Service -->
+      <section id="service" class="section xl:py-[3px]">
+        <div class="container mx-auto mt-8 xl:-mt-[144px]">
+          <!-- grid -->
+          <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+
+            <!-- Grid Item -->
+            <div class="services__item bg-[#2E4049] p-[30px] shadow-custom2 min-h-[288px]: flex flex-col items-center text-center"
+            data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1">
+              <!-- Grid Item Icon -->
+              <div class="mb-[15px] bg-white rounded-full w-[80px] h-[80px] items-center py-[9px] px-[13px]">
+                <img src="../assets/asset/Day Care.png" alt="">
+              </div>
+              <!-- Grid Item Title -->
+              <h3 class="h3 mb-[10px] text-white">General practitioners</h3>
+              <!-- Grid Item Desc -->
+              <p class="font-light leading-normal max-w-[300px] text-white">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
+            </div>
+  
+            <!-- Grid Item -->
+            <div class="services__item bg-[#77D7D3] p-[30px] shadow-custom2 min-h-[288px]: flex flex-col items-center text-center"
+            data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1">
+              <!-- Grid Item Icon -->
+              <div class="mb-[15px] bg-white rounded-full w-[80px] h-[80px] items-center py-[9px] px-[13px]">
+                <img src="../assets/asset/Contract.png" alt="">
+              </div>
+              <!-- Grid Item Title -->
+              <h3 class="h3 mb-[10px] text-white">Pregnancy support</h3>
+              <!-- Grid Item Desc -->
+              <p class="font-light leading-normal max-w-[300px] text-white">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
+            </div>
+  
+            <!-- Grid Item -->
+            <div class="services__item bg-accent-tertiary p-[30px] shadow-custom2 min-h-[288px]: flex flex-col items-center text-center"
+            data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1">
+              <!-- Grid Item Icon -->
+              <div class="mb-[15px] bg-white rounded-full w-[80px] h-[80px] items-center py-[13px] px-[14px]">
+                <img src="../assets/asset/Icon.png" alt="">
+              </div>
+              <!-- Grid Item Title -->
+              <h3 class="h3 mb-[10px] text-white">Nutritional support</h3>
+              <!-- Grid Item Desc -->
+              <p class="font-light leading-normal max-w-[300px] text-white">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
+            </div>
+  
+            <!-- Grid Item -->
+            <div class="services__item bg-[#FFBE60] p-[30px] shadow-custom2 min-h-[288px]: flex flex-col items-center text-center"
+            data-aos="fade-up" data-aos-duration="3000"  data-aos-delay="1">
+              <!-- Grid Item Icon -->
+              <div class="mb-[15px] bg-white rounded-full w-[80px] h-[80px] items-center py-[13px] px-[13px]">
+                <img src="../assets/asset/Geography.png" alt="">
+              </div>
+              <!-- Grid Item Title -->
+              <h3 class="h3 mb-[10px] text-white">Pharmaceutical care</h3>
+              <!-- Grid Item Desc -->
+              <p class="font-light leading-normal max-w-[300px] text-white">Aliquam etiam lectus adipiscing est auctor mi quisque non viverra.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- Service End -->
+
+    <!-- Causeus -->
+    <div class="container mx-auto section" data-aos="fade-up"
+    data-aos-duration="3000" id="causes">
+      <h2 class="blog__title h2 mb-[30px] text-accent-tertiary text-center">Causes of Givest</h2>
+
+      <div class="mx-auto">
+        <!-- Blog Post -->
+        <div class="flex flex-col xl:flex-row gap-y-5 xl:gap-y-0 xl:justify-between items-center mb-[50px] xl:gap-[30px]">
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <a href="detailDonation.html">
+          <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+        </a>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          <!-- Post 1 -->
+          <div class="blog__post max-w-[420px] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+          <div class="relative overflow-hidden">
+        <img src="../assets/img/blog/img-1.png" alt="" class="group-hover:scale-110 transition-all duration-500">
+        <!-- badge -->
+        <div class="bg-accent absolute top-5 left-5 text-white text-base tracking-[2.24px] font-medium uppercase py-[6px] px-[8px]">
+          45%
+        </div>
+      </div>
+      <!-- text -->
+      <div class="px-5 py-6">
+        <!-- title -->
+        <h3 class="h3 mb-[15px]">10 foods to avoid for your heart health</h3>
+        <!-- Progress Bar -->
+        <div class="w-full rounded-full dark:bg-accent-tertiary mb-4">
+          <div class="bg-accent-secondary text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 45%"> 45%</div>
+        </div>
+        <div class="flex gap-[83px] xl:gap-[130px] mb-3">
+          <div class="text-[20px] font-semibold text-accent-secondary">Raised - 5M</div>
+          <div class="text-[20px] font-semibold text-accent-tertiary">Goal - $10M</div>
+        </div>
+        <!-- desc -->
+        <p class="font-light">It’s normal to feel anxiety, worry and grief any time you’re diagnosed with a condition that’s certainly true... 
+
+          <a href="" class="italic underline text-[#4C5354]">Read more</a>
+        </p>
+        <button class="btn btn-sm btn-lg mx-auto bg-accent-secondary text-white mt-5">Donate</button>
+      </div> 
+    </di>
+
+          </div>
+          </div>
+
+          <div class="mx-auto">
+            <a href="detailDonate.html" class="items-center text-center mx-auto">
+            <button class="btn btn-lg btn-sm bg-accent text-secondary mb-[60px] xl:mb-0">
+              More Cuases
+            </button>
+            </a>
+          </div>
+      </div>  
+
+      </div>
+    <!-- Causeus End -->
+
+    <!-- Testimonial -->
+    <section class=" mx-auto" id="testimonial">      
+      <h2 class="h2 text-accent-tertiary text-center mb-[50px]">What People Say About Us</h2>
+        <div class="container mx-auto">
+          <div class="swiper mx-auto">
+            <div class="swiper-wrapper mx-auto gap-5">
+              <div class="swiper-slide mb-[50px] mx-auto">
+                <div class="flex flex-col xl:flex-row xl:justify-between gap-y-5 xl:gap-y-0">   
+                  <!-- Item 1 -->
+                  <div class="flex flex-1 flex-col xl:flex-row">
+                    <div class="flex flex-col xl:flex-row items-center gap-[30px] bg-[#ECF1F0] py-5 px-5 xl:h-[307px] xl:w-[584px]">
+                      <!-- Img -->
+                      <div class="flex-1">
+                        <img src="../assets/img/team/doctor-1.png" alt="">
+                      </div>
+                      <!-- Info -->
+                      <div class="flex-1 flex flex-col text-center xl:text-left">
+                        <!-- Name -->
+                        <h4 class="font-semibold text-[25px] py-3">Dr. Leslie Taylor</h4>
+                        <!-- Job -->
+                        <div class="font-medium tracking-[2.24px] text-[#9AB4B7] mb-[13px] text-[20px]">Designer</div>
+                        <!-- desc -->
+                        <p class="font-light mb-[26px] max-w-[320px] text-[20px] text-[#727272]">Dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum habitant fames ac penatibus et.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 1 -->
+                  <div class="flex flex-1 flex-col xl:flex-row">
+                    <div class="flex flex-col xl:flex-row items-center gap-[30px] bg-[#ECF1F0] py-5 px-5 xl:h-[307px] xl:w-[584px]">
+                      <!-- Img -->
+                      <div class="flex-1">
+                        <img src="../assets/img/team/doctor-1.png" alt="">
+                      </div>
+                      <!-- Info -->
+                      <div class="flex-1 flex flex-col text-center xl:text-left">
+                        <!-- Name -->
+                        <h4 class="font-semibold text-[25px] py-3">Dr. Leslie Taylor</h4>
+                        <!-- Job -->
+                        <div class="font-medium tracking-[2.24px] text-[#9AB4B7] mb-[13px] text-[20px]">Designer</div>
+                        <!-- desc -->
+                        <p class="font-light mb-[26px] max-w-[320px] text-[20px] text-[#727272]">Dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum habitant fames ac penatibus et.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="swiper-slide mb-[5x] mx-auto">
+                <div class="flex flex-col xl:flex-row xl:justify-between gap-y-5 xl:gap-y-0">   
+                  <!-- Item 1 -->
+                  <div class="flex flex-1 flex-col xl:flex-row">
+                    <div class="flex flex-col xl:flex-row items-center gap-[30px] bg-[#ECF1F0] py-5 px-5 xl:h-[307px] xl:w-[584px]">
+                      <!-- Img -->
+                      <div class="flex-1">
+                        <img src="../assets/img/team/doctor-1.png" alt="">
+                      </div>
+                      <!-- Info -->
+                      <div class="flex-1 flex flex-col text-center xl:text-left">
+                        <!-- Name -->
+                        <h4 class="font-semibold text-[25px] py-3">Dr. Leslie Taylor</h4>
+                        <!-- Job -->
+                        <div class="font-medium tracking-[2.24px] text-[#9AB4B7] mb-[13px] text-[20px]">Designer</div>
+                        <!-- desc -->
+                        <p class="font-light mb-[26px] max-w-[320px] text-[20px] text-[#727272]">Dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum habitant fames ac penatibus et.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 1 -->
+                  <div class="flex flex-1 flex-col xl:flex-row">
+                    <div class="flex flex-col xl:flex-row items-center gap-[30px] bg-[#ECF1F0] py-5 px-5 xl:h-[307px] xl:w-[584px]">
+                      <!-- Img -->
+                      <div class="flex-1">
+                        <img src="../assets/img/team/doctor-1.png" alt="">
+                      </div>
+                      <!-- Info -->
+                      <div class="flex-1 flex flex-col text-center xl:text-left">
+                        <!-- Name -->
+                        <h4 class="font-semibold text-[25px] py-3">Dr. Leslie Taylor</h4>
+                        <!-- Job -->
+                        <div class="font-medium tracking-[2.24px] text-[#9AB4B7] mb-[13px] text-[20px]">Designer</div>
+                        <!-- desc -->
+                        <p class="font-light mb-[26px] max-w-[320px] text-[20px] text-[#727272]">Dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum habitant fames ac penatibus et.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="swiper-slide mb-[5x] mx-auto">
+                <div class="flex flex-col xl:flex-row xl:justify-between gap-y-5 xl:gap-y-0">   
+                  <!-- Item 1 -->
+                  <div class="flex flex-1 flex-col xl:flex-row">
+                    <div class="flex flex-col xl:flex-row items-center gap-[30px] bg-[#ECF1F0] py-5 px-5 xl:h-[307px] xl:w-[584px]">
+                      <!-- Img -->
+                      <div class="flex-1">
+                        <img src="../assets/img/team/doctor-1.png" alt="">
+                      </div>
+                      <!-- Info -->
+                      <div class="flex-1 flex flex-col text-center xl:text-left">
+                        <!-- Name -->
+                        <h4 class="font-semibold text-[25px] py-3">Dr. Leslie Taylor</h4>
+                        <!-- Job -->
+                        <div class="font-medium tracking-[2.24px] text-[#9AB4B7] mb-[13px] text-[20px]">Designer</div>
+                        <!-- desc -->
+                        <p class="font-light mb-[26px] max-w-[320px] text-[20px] text-[#727272]">Dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum habitant fames ac penatibus et.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 1 -->
+                  <div class="flex flex-1 flex-col xl:flex-row">
+                    <div class="flex flex-col xl:flex-row items-center gap-[30px] bg-[#ECF1F0] py-5 px-5 xl:h-[307px] xl:w-[584px]">
+                      <!-- Img -->
+                      <div class="flex-1">
+                        <img src="../assets/img/team/doctor-1.png" alt="">
+                      </div>
+                      <!-- Info -->
+                      <div class="flex-1 flex flex-col text-center xl:text-left">
+                        <!-- Name -->
+                        <h4 class="font-semibold text-[25px] py-3">Dr. Leslie Taylor</h4>
+                        <!-- Job -->
+                        <div class="font-medium tracking-[2.24px] text-[#9AB4B7] mb-[13px] text-[20px]">Designer</div>
+                        <!-- desc -->
+                        <p class="font-light mb-[26px] max-w-[320px] text-[20px] text-[#727272]">Dolor sit amet, consectetur adipiscing elit. Dignissim massa diam elementum habitant fames ac penatibus et.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+          </div>
+
+            <div class="container mx-auto mt-[40px] xl:mt-[65px]">
+              <!-- Wrapper -->
+              <div class="flex flex-col xl:flex-row gap-y-6 justify-between">
+                <!-- Item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent xl:mb-3">+5120</div>
+                    <div>Happy patients</div>
+                </div>
+                <!-- Item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent xl:mb-3">+26</div>
+                    <div>Total branches</div>
+                </div> 
+                <!-- Item -->
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent xl:mb-3">+53</div>
+                    <div>Senior doctors</div>
+                </div>
+                <!-- Item -->
+                <div class="stats__item flex-1 flex flex-col items-center">
+                    <div class="text-4xl xl:text-[64px] font-semibold text-accent xl:mb-3">+10</div>
+                    <div>Years experience</div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-[80px]">
+            <div class="brands mt-[40px] xl:mt-[90px]">
+              <div class="container mx-auto">
+                <div class="flex flex-col xl:flex-row gap-y-[50px] xl:gap-y-0 justify-between items-center">
+                  <img src="../assets/asset/01.png" alt="">
+                  <img src="../assets/asset/02.png" alt="">
+                  <img src="../assets/asset/03.png" alt="">
+                  <img src="../assets/asset/04.png" alt="">
+                  <img src="../assets/asset/05.png" alt="">
+                </div>
+              </div>
+            </div>
+    </section>
+    <!-- Testimonial End -->
+
+    <!-- Volunteer -->
+    <section id="volunteer" class="section bg-no-repeat bg-cover xl:h-[988px] w-full mt-[70px]" style="background-image: url(../assets/asset/Background.png);">
+      <div class="container mx-auto flex flex-col xl:flex-row justify-between ">
+        <div class="text-center mx-auto items-center">
+          <h2 class="h2 max-w-[575px] text-center xl:text-left mb-3">Join The CommunityTo Give Education For Children</h2>
+          <p class="max-w-[575px] text-white text-center xl:text-left mb-5">Lorem Ipsum is simply dummy text of the printin typesetting dummy text ever when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <img src="../assets/asset/image-volunteer.png" alt="" class="mb-5">
+          <button class="btn btn-lg btn-sm bg-accent-tertiary text-white mb-5 mr-[30px] hover:bg-accent transition-all duration-300">Our Event</button>
+        </div>
+
+        <div class="border-[3px] p-9">
+          <h4 class="xl:text-[40px] text-[29px] text-white mb-5">Become A Volunteer</h4>
+          <form>
+            <div class="mb-4">
+                <label for="name" class="block text-white text-sm font-medium mb-2">Full Name</label>
+                <input type="text" id="name" name="name" class="xl:w-[500px] w-full p-3 border-[2px] bg-transparent text-white">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-white text-sm font-medium mb-2">Email Address</label>
+                <input type="email" id="email" name="email" class="xl:w-[500px] w-full p-3 border-[2px] bg-transparent text-white">
+            </div>
+            <div class="mb-4">
+                <label for="number" class="block text-white text-sm font-medium mb-2">Phone Number</label>
+                <input type="number" id="number" name="number" class="xl:w-[500px] w-full p-3 border-[2px] bg-transparent text-white">
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-white text-sm font-medium mb-2">Message</label>
+                <textarea name="" id="" cols="40" rows="4" class="w-full p-3 border-[2px] bg-transparent text-white"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-accent-tertiary text-white p-3 rounded-md hover:bg-accent focus:outline-none focus:shadow-outline-blue transition-all duration-300">Register</button>
+        </form>
+        </div>
+      </div>
+    </section>
+    <!-- Volunteer End -->
+
+    <!-- Gallery -->
+    <section class="section mx-auto" id="gallery">
+      <h2 class="h2 text-accent-tertiary text-center mb-[50px]">Our Gallery</h2>
+      <div class="container mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="grid gap-4">
+              <div data-aos="flip-left">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/1.png" alt="">
+              </div>
+              <div data-aos="flip-right">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/2.png" alt="">
+              </div>
+              <div  data-aos="flip-up">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/3.png" alt="">
+              </div>
+          </div>
+          <div class="grid gap-4">
+              <div data-aos="flip-up">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/4.png" alt="">
+              </div>
+              <div data-aos="flip-right">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/5.png" alt="">
+              </div>
+              <div data-aos="flip-down">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/6.png" alt="">
+              </div>
+          </div>
+          <div class="grid gap-4">
+              <div data-aos="flip-right">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/7.png" alt="">
+              </div>
+              <div data-aos="flip-down">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/8.png" alt="">
+              </div>
+              <div data-aos="flip-right">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/9.png" alt="">
+              </div>
+          </div>
+          <div class="grid gap-4">
+              <div data-aos="flip-left">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/10.png" alt="">
+              </div>
+              <div data-aos="flip-right">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/11.png" alt="">
+              </div>
+              <div data-aos="flip-up">
+                  <img class="h-auto max-w-full rounded-lg" src="../assets/asset/12.png" alt="">
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+    <!-- Gallery End -->
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white p-8">
+      <div class="container mx-auto flex flex-wrap justify-between">
+          <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+              <h3 class="text-[30px] font-semibold mb-4 flex text-white">
+              <img src="../assets/asset/logo.svg" alt="" class="mr-3">
+              Humanity
+              </h3>
+              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla justo eget elementum.</p>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+              <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+              <p class="text-white">Email: chiarityshay@peduli.com</p>
+              <p class="text-white">Phone: +1 (123) 456-7890</p>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+              <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+              <div class="flex space-x-4">
+                  <a href="#" class="text-white transition-all duration-300 bg-accent-tertiary p-2.5 rounded-full hover:bg-accent hover:text-secondary">
+                    <i class="ri-facebook-fill text-2xl"></i>
+                  </a>
+                  <a href="#" class="text-white transition-all duration-300 bg-accent-tertiary p-2.5 rounded-full hover:bg-accent hover:text-secondary">
+                    <i class="ri-twitter-x-fill text-2xl"></i>
+                  </a>
+                  <a href="#" class="text-white transition-all duration-300 bg-accent-tertiary p-2.5 rounded-full hover:bg-accent hover:text-secondary">
+                      <i class="ri-instagram-line text-2xl"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+              <h3 class="text-xl font-semibold mb-4 ">Newsletter</h3>
+              <p class="text-white">Subscribe to our newsletter for updates and promotions.</p>
+              <form class="mt-4">
+                  <input type="email" placeholder="Your Email" class="w-full p-2 border rounded focus:outline-none focus:border-accent">
+                  <button type="submit" class="mt-2 w-full bg-accent-tertiary text-white p-2 rounded hover:bg-accent focus:outline-none focus:shadow-outline-blue transition-all duration-500">Subscribe</button>
+              </form>
+          </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-600 pt-4 text-center text-white">
+          <p>&copy; 2024 Chiarityshay. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Swipper -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- My Script -->
+    <script src="main.js"></script>
+    
+    <!-- Script Scroll Reveal -->
+    <script src="scrollreveal.min.js"></script>
+    
+    <script src="dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
